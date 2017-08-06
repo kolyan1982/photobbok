@@ -1,0 +1,101 @@
+@import "partials/mixin";
+@import "partials/params";
+
+#solution {
+  font-family: 'Myriad Pro';
+  padding: 50px 0;
+  & h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  & .row {
+    display: flex;
+    justify-content: space-between;
+    & .tile {
+      width: 30%;
+      position: relative;
+      padding: 5px;
+      background-color: @yellow;
+      border-radius: 5px;
+
+      & .bestseller {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        & .left {
+          position: absolute;
+          background-color: @yellow;
+          transform: rotate(45deg);
+          width: 28px;
+          height: 30px;
+          left: 39px;
+          top: -19px;
+
+        }
+        & .text {
+          position: absolute;
+          padding: 6px 30px 0;
+          font-size: 20px;
+          color: @red;
+          text-transform: uppercase;
+          background-color: @yellow;
+          top: -25px;
+        }
+        & .right {
+          position: absolute;
+          background-color: @yellow;
+          transform: rotate(45deg);
+          width: 28px;
+          height: 30px;
+          top: -19px;
+          right: 40px;
+        }
+      }
+      & .header {
+        padding: 40px;
+        & h3 {
+          font-size: 36px;
+        }
+
+      }
+      & .content {
+        position: relative;
+        padding: 15px;
+        height: 250px;
+        background-color: #fff;
+        margin-bottom: 10px;
+
+        & ul {
+          list-style-image: url("img/checkbox.png");
+          padding: 10px 0 0 30px;
+
+          & li {
+            padding-left: 10px;
+            font-size: 18px;
+
+            & span {
+              position: relative;
+              top: -5px;
+            }
+          }
+        }
+        & .cost {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          font-size: 60px;
+          bottom: 10px;
+          right: 1px;
+        }
+      }
+      & .footer {
+        padding: 5px 0;
+        text-align: center;
+        font-size: 22px;
+      }
+    }
+  }
+
+}

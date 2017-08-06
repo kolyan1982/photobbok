@@ -1,0 +1,54 @@
+@import "partials/mixin";
+@import "partials/params";
+
+#Terms_Payment_Shipping {
+  padding: 90px 0;
+  text-align: center;
+  font-family: 'Myriad Pro';
+  & .tiles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    & .tile {
+      display: flex;
+      flex-direction: column;
+      width: 28%;
+      & .header {
+        padding: 10px 0;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+        text-align: center;
+        background-color: @yellow;
+        font-size: 36px;
+        border-radius: 5px 5px 0 0;
+      }
+      & .content {
+        text-align: left;
+        border-radius: 0 0 5px 5px;
+        background-color: @light-color;
+        padding: 20px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        flex-grow: 1;
+
+        & p {
+          margin-bottom: 5px;
+          &.red {
+            color: @red;
+          }
+        }
+
+        & ul {
+          padding: 10px 0 0 28px;
+          display: block;
+          list-style-type: disc;
+        }
+
+      }
+    }
+  }
+
+  & button {
+
+  }
+}

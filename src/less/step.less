@@ -1,0 +1,39 @@
+@import "partials/mixin";
+@import "partials/params";
+
+#step {
+  padding: 40px 0 60px;
+  text-align: center;
+  & img {
+    margin-bottom: 20px;
+  }
+  & .text {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 950px;
+
+    & > div {
+      width: 25%;
+      font-size: 20px;
+
+      & > div {
+        position: relative;
+      }
+
+      &.first > div {
+        right: 45px;
+      }
+      &.second > div {
+        right: 14px;
+      }
+      &.third > div {
+        right: -15px;
+      }
+      &.fourth > div {
+        right: -48px;
+      }
+    }
+  }
+
+}
